@@ -5,9 +5,46 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body::before {
+  background-image: url('./components/intro/aerial.jpg'); 
+  background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.4;
+	content: "";
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logo {
+  box-shadow: -8px 5px 10px black,
+               8px 5px 10px black;
+  margin: 5px;
+  border-radius: 3%;
+  max-width: 20%;
+  min-width: 200px;
+}
+
+.logoBox {
+  display: block;
+  margin: auto;
+}
+
+.background {
+  max-height: 100vh;
+  display: content;
+}
+
+ImageGallery img {
+  max-height: 50vh;
+  z-index: 1;
 }
