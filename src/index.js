@@ -12,7 +12,12 @@ import '@fontsource/roboto/700.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className='wrapper'>
+      <img className='bg' src='./images/aerial.jpg' alt="" />
+      <div className='content'>
+        <App />
+      </div>
+    </div>
   </React.StrictMode>
 );
 

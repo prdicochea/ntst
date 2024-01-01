@@ -1,5 +1,4 @@
 import React from 'react';
-import aerial from './aerial.jpg';
 import Container from '@mui/material/Container';
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
@@ -81,7 +80,7 @@ const images = [
 ];
 
 
-function Intro() {
+function Slideshow() {
   return (
     <Container maxWidth='lg'>
         <ImageGallery items={images} showNav = {false} showPlayButton = {false} showFullscreenButton = {false} showThumbnails={false}
@@ -90,4 +89,4 @@ function Intro() {
   )
 }
 
-export default Intro
+export default Slideshow

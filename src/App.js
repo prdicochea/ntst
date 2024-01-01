@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Intro from './components/intro/Intro';
+import Slideshow from './components/intro/Slideshow';
+import Cards from './components/intro/Cards';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Intro />
+      <Cards />
+      <Slideshow />
     </>
   );
 }

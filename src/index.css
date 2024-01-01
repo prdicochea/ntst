@@ -8,18 +8,6 @@ body {
   
 }
 
-body::before {
-  background-image: url('./components/intro/aerial.jpg'); 
-  background-size: cover;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-	opacity: 0.4;
-	content: "";
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -39,12 +27,24 @@ code {
   margin: auto;
 }
 
-.background {
-  max-height: 100vh;
-  display: content;
-}
-
 ImageGallery img {
   max-height: 50vh;
   z-index: 1;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.content {
+  position: relative;
 }
