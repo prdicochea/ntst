@@ -7,12 +7,12 @@ function Cards() {
     <div>
         <Box
         sx={{
-            display: 'block',
-            flexWrap: 'no-wrap','& > :not(style)': {
+            display: 'flex',
+            flexWrap: 'wrap','& > :not(style)': {
                 m: 1,
-                width: '25vw',
+                width: '45vw',
                 height: 'auto',
-                padding: '30vh',
+                padding: 'auto',
                 margin: 'auto',
                 backgroundColor: '#0053E3',
                 textAlign: 'center',

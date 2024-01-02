@@ -27,11 +27,6 @@ code {
   margin: auto;
 }
 
-ImageGallery img {
-  max-height: 50vh;
-  z-index: 1;
-}
-
 .wrapper {
   overflow: hidden;
   position: relative;
@@ -39,12 +34,19 @@ ImageGallery img {
 
 .bg {
   opacity: 0.3;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
+
 .content {
-  position: relative;
+  position:relative;
+}
+
+ImageGallery {
+  height: 50%;
 }
